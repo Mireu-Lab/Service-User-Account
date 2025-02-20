@@ -1,0 +1,33 @@
+{    
+    "SERVICE_NAME" : "Mireu Account",
+
+    "MONGODB_INFO" : {
+        "Server" : {
+            "HOST" : "Account-Mongodb",
+            "PORT" : 27017,
+            "DATEBASE" : "Account"
+        },
+
+        "Account" : {
+            "USER" : "root",
+            "PASSWORD" : "Account"
+        }
+    },
+
+    "SMTP_INFO" : {
+        "Server" : {
+            "HOST" : "smtp.gmail.com",
+            "PORT" : 465,
+            "SSL" : true
+        },
+
+        "Account" : {
+            "EMAIL" : "alfmalfm1214@gmail.com",
+            "TOKEN" : "vqbjufdpcjjptpdx"
+        }
+    },
+
+    "DISCORD_INFO" : {
+        "WEBHOOK" : "https://discord.com/api/webhooks/1054354673370419200/sNWe1lpod_X3ItjOg22WsHbl5AQwR5b3YrYGv0e69Vb50SF5BQPpVMNUIPYGp6wuTali"
+    }
+}

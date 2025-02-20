@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  api:
+    image: registry.gitlab.com/individual-projects2/service-user-account:api
+    restart: always
+    container_name: Account-API
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:latest
+    restart: always
+    container_name: Account-Mongodb
+    volumes:
+      - Account-MongoDB:/data/db
+    environment:
+      TZ: Asia/Seoul
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: Account
+
+volumes:
+  Account-MongoDB:
